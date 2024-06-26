@@ -4,6 +4,14 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+criterion = "0.3.4"
+
+[dev-depencencies]
+criterion = "0.3.4"
 
 [build]
 rustflags = ["-A dead_code"]
+
+[[bench]]
+name = "two_sum_benchmark"
+harness = false
