@@ -1,0 +1,9 @@
+[package]
+name = "rustgorithms"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[build]
+rustflags = ["-A dead_code"]
