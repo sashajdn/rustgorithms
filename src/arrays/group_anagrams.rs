@@ -23,6 +23,7 @@ pub fn group_anagrams(strs: Vec<&str>) -> Vec<Vec<String>> {
         .collect()
 }
 
+#[inline]
 fn encode_anagram(s: &str) -> String {
     let mut counts = [0; 26];
 
