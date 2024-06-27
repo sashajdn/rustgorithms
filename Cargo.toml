@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 criterion = "0.3.4"
+tokio = { version = "1.0", features = ["full"] }
 
 [dev-depencencies]
 criterion = "0.3.4"
