@@ -4,8 +4,8 @@ struct MinStack<T>
 where
     T: Ord + PartialEq + Clone,
 {
-    stack: Box<Vec<T>>,
-    min_stack: Box<Vec<T>>,
+    stack: Vec<T>,
+    min_stack: Vec<T>,
 }
 
 trait Stack<T>
@@ -23,8 +23,8 @@ where
 {
     pub fn new(capacity: usize) -> Self {
         MinStack {
-            stack: Box::new(Vec::with_capacity(capacity)),
-            min_stack: Box::new(Vec::with_capacity(capacity)),
+            stack: Vec::with_capacity(capacity),
+            min_stack: Vec::with_capacity(capacity),
         }
     }
 

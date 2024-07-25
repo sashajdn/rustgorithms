@@ -1,4 +1,5 @@
 use std::collections::HashSet;
+use std::rc::Rc;
 
 // checks if there are any duplicate numbers in the hashmap, if a duplicate is found,
 // then we return true, otherwise return false using a hashmap to check for duplicates.
@@ -22,6 +23,8 @@ mod tests {
 
     #[test]
     fn contains_duplicate_sanitycheck() {
+        let r = Rc<0>;
+
         let result_empty = contains_duplicate_hs(vec![]);
         assert_eq!(result_empty, false);
 
